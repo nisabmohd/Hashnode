@@ -4149,6 +4149,13 @@
     "html-escaper" "^2.0.0"
     "istanbul-lib-report" "^3.0.0"
 
+"javascript-time-ago@^2.5.9":
+  "integrity" "sha512-pQ8mNco/9g9TqWXWWjP0EWl6i/lAQScOyEeXy5AB+f7MfLSdgyV9BJhiOD1zrIac/lrxPYOWNbyl/IW8CW5n0A=="
+  "resolved" "https://registry.npmjs.org/javascript-time-ago/-/javascript-time-ago-2.5.9.tgz"
+  "version" "2.5.9"
+  dependencies:
+    "relative-time-format" "^1.1.6"
+
 "jest-changed-files@^29.4.2":
   "integrity" "sha512-Qdd+AXdqD16PQa+VsWJpxR3kN0JyOCX1iugQfx5nUgAsI4gwsKviXkpclxOK9ZnwaY2IQVHz+771eAvqeOlfuw=="
   "resolved" "https://registry.npmjs.org/jest-changed-files/-/jest-changed-files-29.4.2.tgz"
@@ -5978,6 +5985,11 @@
   "version" "0.9.1"
   dependencies:
     "jsesc" "~0.5.0"
+
+"relative-time-format@^1.1.6":
+  "integrity" "sha512-aCv3juQw4hT1/P/OrVltKWLlp15eW1GRcwP1XdxHrPdZE9MtgqFpegjnTjLhi2m2WI9MT/hQQtE+tjEWG1hgkQ=="
+  "resolved" "https://registry.npmjs.org/relative-time-format/-/relative-time-format-1.1.6.tgz"
+  "version" "1.1.6"
 
 "repeat-element@^1.1.2":
   "integrity" "sha512-LFiNfRcSu7KK3evMyYOuCzv3L10TW7yC1G2/+StMjK8Y6Vqd2MG7r/Qjw4ghtuCOjFvlnms/iMmLqpvW/ES/WQ=="

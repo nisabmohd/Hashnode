@@ -1,5 +1,9 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
+import TimeAgo from 'javascript-time-ago';
+import en from 'javascript-time-ago/locale/en';
+TimeAgo.addDefaultLocale(en);
+const timeAgo = new TimeAgo('en-US');
 
 type postProps = {
   image: string;
@@ -57,7 +61,8 @@ export default function Post({
               color: '#a8aab4',
               marginTop: -5,
             }}>
-            {Date.parse(timestamp)}
+            {timeAgo.format(Date.parse(timestamp))}
+            {}
           </Text>
         </View>
       </View>
@@ -69,9 +74,9 @@ export default function Post({
             fontSize: 25,
             marginTop: 10,
           }}>
-          {title}
+          {title!}
         </Text>
-        <Text style={{fontSize: 18, color: 'gray'}}>{breif}</Text>
+        <Text style={{fontSize: 18, color: 'gray'}}>{breif!}</Text>
       </View>
     </View>
   );
