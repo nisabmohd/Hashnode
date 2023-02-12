@@ -11,7 +11,7 @@ import Home from './screens/Home';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView style={{height: '100%', backgroundColor: '#f5f7fb'}}>
+    <SafeAreaView style={{height: '100%', backgroundColor: '#191a24'}}>
       <Home />
     </SafeAreaView>
   );

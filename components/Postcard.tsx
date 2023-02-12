@@ -23,13 +23,14 @@ export default function Post({
   return (
     <View
       style={{
-        backgroundColor: '#e4e5f1',
-        width: '96%',
+        backgroundColor: '#191a24',
+        width: '100%',
         borderRadius: 8,
-        marginTop: 12,
+        marginTop: 5,
         marginLeft: 'auto',
         marginRight: 'auto',
         padding: 15,
+        marginBottom: 15,
       }}>
       <View
         style={{
@@ -50,7 +51,7 @@ export default function Post({
               fontWeight: 'bold',
               fontSize: 20,
               fontFamily: 'Poppins',
-              color: 'black',
+              color: 'white',
             }}>
             {username!}
           </Text>
@@ -69,7 +70,7 @@ export default function Post({
       <View id="breif">
         <Text
           style={{
-            color: 'black',
+            color: 'white',
             fontWeight: 'bold',
             fontSize: 25,
             marginTop: 10,
