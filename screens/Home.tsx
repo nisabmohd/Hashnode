@@ -6,27 +6,27 @@ import axios from 'axios';
 export default function Home(): JSX.Element {
   const [posts, setPosts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   const [done, setDone] = useState(false);
   useEffect(() => {
     let body = {
       query: `
-      query{
-        storiesFeed(type:BEST,page:${page}){
-        _id
-        author{
-          username
-          photo
+      {
+        storiesFeed(type: FEATURED, page: ${page}) {
+          _id
+          slug
+          author {
+            name
+            photo
+          }
+          brief
+          title
+          coverImage
+          totalReactions
+          brief
+          dateAdded
         }
-        contentMarkdown
-        slug
-        title
-        coverImage
-        totalReactions
-        brief
-        dateAdded
       }
-    }
             `,
     };
     let options = {
@@ -55,7 +55,7 @@ export default function Home(): JSX.Element {
     <ScrollView style={{paddingBottom: 45, height: '100%'}}>
       {posts!.map(item => (
         <Post
-          key={item._id + new Date() + Math.random() * 1200}
+          key={item._id}
           username={item.author.username}
           image={
             item.author.photo ??

@@ -13,7 +13,7 @@ type postProps = {
   timestamp: string;
 };
 
-export default function Post({
+export default function Postcard({
   username,
   image,
   title,
@@ -23,14 +23,14 @@ export default function Post({
   return (
     <View
       style={{
-        backgroundColor: '#191a24',
-        width: '100%',
-        borderRadius: 8,
+        width: '98%',
         marginTop: 5,
         marginLeft: 'auto',
         marginRight: 'auto',
         padding: 15,
-        marginBottom: 15,
+        marginBottom: 1,
+        borderBottomColor: '#1b1c27',
+        borderBottomWidth: 2,
       }}>
       <View
         style={{
